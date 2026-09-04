@@ -103,6 +103,8 @@ Input values are automatically saved to `<schematic>.bus_gen.json` after generat
 
 ## Notes
 
+> **Warning**: This tool modifies the schematic file directly. Always back up your schematic file before running the tool.
+
 - Generation **appends** to the file. Running the tool multiple times with the same settings will create duplicate elements. Use KiCad's Undo or delete manually if this happens.
 - Pin coordinate transformation is implemented based on KiCad's TRANSFORM matrix specification, supporting symbol rotation (0°/90°/180°/270°) and mirroring (X-axis, Y-axis).
 
@@ -131,3 +133,7 @@ crossterm = "0.28"
 ## License
 
 MIT
+
+## Credits
+
+This project was entirely created by [Claude Sonnet 4.6](https://www.anthropic.com/claude) (Anthropic), an AI assistant. All code, documentation, and design decisions were generated through a conversational development session.
